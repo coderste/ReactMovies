@@ -1,3 +1,4 @@
 {
-    "presets": ["react-app", "airbnb"]
+    "presets": ["react-app", "airbnb"],
+    "plugins": ["transform-class-properties"]
 }
