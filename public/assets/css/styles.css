@@ -1,0 +1,27 @@
+body {
+  background-color: #efefef;
+  font-size: 16px;
+  color: #222222;
+  margin: 0;
+}
+
+#root {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: #efefef;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #222222;
+  border-radius: 0;
+}
+
+.btn:hover {
+  background-color: #222222;
+  color: #fefefe;
+}
