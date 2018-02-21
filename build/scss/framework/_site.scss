@@ -1,0 +1,67 @@
+body {
+    color: $dark-grey;
+    line-height: $line-height;
+    font-size: $font-size;
+    background-color: #f2f2f2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    color: $dark-grey;
+}
+
+h1 {
+    font-size: $h1;
+}
+
+h2 {
+    font-size: $h2;
+}
+
+h3 {
+    font-size: $h3;
+}
+
+h4 {
+    font-size: $h4;
+}
+
+h5 {
+    font-size: $h5;
+}
+
+h6 {
+    font-size: $h6;
+}
+
+p {
+    margin: 0 0 10px;
+    color: $dark-grey;
+}
+
+img {
+    max-width: 100%;
+}
+
+.site {
+    &__container {
+        @extend .container-fluid;
+    }
+
+    &__row {
+        @extend .row;
+    }
+
+    &__left {
+        @extend .col-md-3;
+    }
+
+    &__right {
+        @extend .col-md-9;
+    }
+}

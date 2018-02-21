@@ -1,0 +1,16 @@
+.site-header {
+    text-align: center;
+    padding: 25px 0;
+    margin-bottom: 50px;
+    border: {
+        style: solid;
+        width: 0;
+        bottom-width: 3px;
+        color: $secondary;
+    }
+
+    h1 {
+        margin-bottom: 0;
+        color: $primary;
+    }
+}

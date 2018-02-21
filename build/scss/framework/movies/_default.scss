@@ -1,0 +1,70 @@
+.movies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .movie {
+        &__item {
+            @extend .col-md-3;
+            margin-bottom: 25px;
+
+            // &-header {}
+
+            &-poster {
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 325px;
+            }
+
+            &-content {
+                background-color: $white;
+                padding: 15px 10px;
+                box-shadow: $box-shadow;
+                height: 125px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                position: relative;
+                border: {
+                    style: solid;
+                    width: 1px;
+                    color: $light-grey;
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    margin-bottom: 0;
+                    text-align: center;
+                }
+            }
+
+            &-info {
+                .movie-info {
+                    font-size: 0.8rem;
+                    position: absolute;
+                    bottom: 10px;
+
+                    &--right {
+                        right: 15px;
+
+                        span {
+                            text-align: right;
+                        }
+                    }
+
+                    &--left {
+                        left: 15px;
+                    }
+
+                    span {
+                        font-weight: bold;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
