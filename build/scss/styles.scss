@@ -3,8 +3,11 @@
 @import 'bootstrap/bootstrap-reboot';
 @import 'bootstrap/bootstrap-grid';
 
+@import '../../node_modules/react-input-range/src/scss/index';
+
 @import 'framework/site';
 
 @import 'framework/header/default';
+@import 'framework/sidenav/default';
 
 @import 'framework/movies/default';
