@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const MovieListItem = ({ movie }) => {
-    const { title, poster_path } = movie;
+    const { title, poster_path, vote_average, release_date } = movie;
     const imgUrl = `https://image.tmdb.org/t/p/w342/${poster_path}`;
 
     const backgroundImage = {
@@ -19,10 +19,10 @@ const MovieListItem = ({ movie }) => {
                 </div>
                 <div className="movie__item-info">
                     <div className="movie-year movie-info movie-info--left">
-                        Year <span>2017</span>
+                        Year <span>{release_date}</span>
                     </div>
                     <div className="movie-rating movie-info movie-info--right">
-                        Rating <span>7.6</span>
+                        Rating <span>{vote_average}</span>
                     </div>
                 </div>
             </div>
