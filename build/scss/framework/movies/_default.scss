@@ -10,6 +10,21 @@
 
             // &-header {}
 
+            &-title {
+                width: 100%;
+
+                h3 {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    margin-bottom: 0;
+                    text-align: center;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    width: 100%;
+                }
+            }
+
             &-poster {
                 background-size: cover;
                 background-position: center;
@@ -31,13 +46,6 @@
                     style: solid;
                     width: 1px;
                     color: $light-grey;
-                }
-
-                h3 {
-                    font-size: 1.2rem;
-                    font-weight: 500;
-                    margin-bottom: 0;
-                    text-align: center;
                 }
             }
 

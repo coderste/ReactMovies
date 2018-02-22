@@ -12,7 +12,7 @@ class App extends Component {
         }&language=en-US`,
         moviesUrl: `https://api.themoviedb.org/3/discover/movie?api_key=${
             process.env.MIX_TMDB_API_KEY
-        }&language=en-US&sort_by=popularity.asc&include_adult=false&include_video=false&page=1`,
+        }&language=en-US&sort_by=vote_average.desc&include_adult=false&include_video=false&page=1`,
         genre: 'Comedy',
         genres: [],
         year: {
@@ -48,7 +48,7 @@ class App extends Component {
         const moviesUrl =
             `https://api.themoviedb.org/3/discover/movie?` +
             `api_key=${process.env.MIX_TMDB_API_KEY}&` +
-            `language=en-US&sort_by=popularity.desc&` +
+            `language=en-US&sort_by=vote_average.desc&` +
             `with_genres=${genreId}&` +
             `primary_release_date.gte=${year.value.min}-01-01&` +
             `primary_release_date.lte=${year.value.max}-12-31&` +

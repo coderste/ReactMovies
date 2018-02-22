@@ -2666,6 +2666,21 @@ img {
   margin-bottom: 25px;
 }
 
+.movies .movie__item-title {
+  width: 100%;
+}
+
+.movies .movie__item-title h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
 .movies .movie__item-poster {
   background-size: cover;
   background-position: center;
@@ -2695,13 +2710,6 @@ img {
   border-style: solid;
   border-width: 1px;
   border-color: #ededed;
-}
-
-.movies .movie__item-content h3 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 0;
-  text-align: center;
 }
 
 .movies .movie__item-info .movie-info {
